@@ -174,7 +174,7 @@ module.exports = function TP(mod) {
 		isCastanic = Math.floor((event.templateId - 10101) / 200) === 3;
 	});
 	
-	mod.hook('C_PLAYER_LOCATION', 1, (event) => {
+	mod.hook('C_PLAYER_LOCATION', 5, (event) => {
 		if(!isDrop && (event.type == 2 || event.type == 10)) {
 			return false;
 		};
@@ -188,7 +188,7 @@ module.exports = function TP(mod) {
 		aLoc = event;
 	});
 	
-	mod.hook('S_PLAYER_STAT_UPDATE', 9, event => {
+	mod.hook('S_PLAYER_STAT_UPDATE', 12, event => {
 		curHp = event.hp;
 		maxHp = event.maxHp;
 	});
