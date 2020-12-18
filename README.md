@@ -1,12 +1,10 @@
-Teleport</br>
-</br>
-Command:</br>
-- tp x y z : move manual with x y z</br>
-- tp x|y|z +|- [distance] : move with x y z</br>
-- tp up|down [distance] : move up and down</br>
-- tp save [name] : save position to bookmarks</br>
-- tp move [name] : move to save position in bookmarks</br>
-- tp del [name] : remove save position from bookmarks</br>
-- tp coord : get your coord zone_id x y z</br>
-- tp blink : blink to front</br>
-- tp back : undo last blin</br>
+# Commands
+- tp drop [x] -> drop your hp to x percent for slaying
+- tp set|save [name] -> save your location name
+- tp to|warp|move [name] -> tp to your saved location name (*if not have name will open GUI for your bookmark)
+- tp remove|delete|del [name] -> remove your saved location name
+- tp blink [distance] [z] -> blink to forward with distance and z (*can ignore z if you are sure not underground)
+- tp back|last -> move back to your last location before tp
+- tp up|down|x|y|z +|- [distance] -> tp follow side +/- with distance
+- tp coord|where|loc|location -> show coordinates zone id and x y z
+- tp [x] [y] [z] -> tp with manually coordinates
